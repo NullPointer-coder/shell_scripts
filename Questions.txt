@@ -15,3 +15,5 @@ fceab221011657b8f7453d10009485f0
 
 to the screen. If the contents of two files (text or binary) are identical, then the md5 hash of the two files will be identical. Thus an easy way to detect identical files is to compare their md5 hashes.
 
+Write a shell script that accepts a directory pathname as its argument that prints the names of all files that are duplicates within that directory. If there is no argument, the current working directory is assumed. A hint that may or may not be useful: if two files have different sizes, they cannot be identical. Do not use either sed or awk in your solution. Your script should do something intelligent if the named directory does not exist, and should have reasonable exit codes.
+
