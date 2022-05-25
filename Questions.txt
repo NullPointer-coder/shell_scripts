@@ -1,0 +1,18 @@
+https://en.wikipedia.org/wiki/MD5
+
+1.Write a shell script that accepts a filename as its argument. The named file is assumed to be a text file. The script should save the original content to a file with the original name with “.orig” appended (without the quotes). The file should be replaced with one that has all trailing spaces on each line removed. Do not use either sed or awk in your solution. Your script should do something intelligent if the named file does not exist, and should have reasonable exit codes.
+
+
+2.Write a shell script that accepts a filename as its first argument. The named file is assumed to be a csv file with fields delimited by tabs. The second argument is a column number. The purpose of the script is to calculate the sum of the values in that column and print it to standard output. You may assume that all the values, if each is a value, will be integers as opposed to floats. Do not use either sed or awk in your solution. Your script should do something intelligent if the named file does not exist, if the column does not exist, or if any line in the column does not contain a value, and should have reasonable exit codes. In all cases, consider the column count to start at 0.
+
+
+3.MD5 is a hash function producing a 128-bit checksum of a collection of bytes. You can read about it here. On Linux, the command to produce an md5 is /usr/bin/md5sum. On Macs, it is /sbin/md5. For example, on Linux the command:
+
+$ md5sum foo
+
+prints:
+
+fceab221011657b8f7453d10009485f0
+
+to the screen. If the contents of two files (text or binary) are identical, then the md5 hash of the two files will be identical. Thus an easy way to detect identical files is to compare their md5 hashes.
+
